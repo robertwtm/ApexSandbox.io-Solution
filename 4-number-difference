@@ -1,11 +1,10 @@
 public Integer diff(Integer a, Integer b) {
-        Integer soma;
-        if (b>a){
-            soma = b-a;
-            return soma;
-        } else{
-            soma = a - b;
-            return soma;
-        }
-
+    Integer soma;
+    if (b>a){
+        soma = b-a;
+        return soma;
+    } else{
+        soma = a - b;
+        return soma;
+    }
 }
