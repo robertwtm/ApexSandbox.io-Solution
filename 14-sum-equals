@@ -2,9 +2,9 @@ public Boolean sumEquals(Integer a, Integer b, Integer c) {
     
     Integer somaIgual = a + b;
 
-    if(somaIgual = c ){
-        return = true;
+    if(somaIgual == c ){
+        return true;
     } else {
-        return = false;
+        return false;
     } 
 }
