@@ -1,6 +1,10 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
-    if( (a + b == c) || (a + c == b) || (b + c == a)){
+    if( ( b + c == a)){
+        return String ='a';
+    }else if( ( a + c == b)){
         return String ='b';
+    }else if( ( a + b == c)){
+        return String ='c';
     }else{
         return String ='';
     }
