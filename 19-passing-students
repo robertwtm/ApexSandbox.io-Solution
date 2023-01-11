@@ -1,14 +1,12 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     Boolean aprovado;
-    if((passedExam == true) && (passedAssignments == true) && (passedProject == true)){
+    if( (passedExam == true) && (passedAssignments == true) && (passedProject == true) ||
+        (passedExam == true) && (passedAssignments == false) && (passedProject == true) ||
+        (passedExam == false) && (passedAssignments == true) && (passedProject == true) ||
+        (passedExam == true) && (passedAssignments == true) && (passedProject == false)){
+        
         return aprovado = true;
-    }else if ((passedExam == true) && (passedAssignments == false) && (passedProject == true)){
-        return aprovado = true;
-    }else if ((passedExam == false) && (passedAssignments == true) && (passedProject == true)){
-        return aprovado = true;
-    }else if ((passedExam == true) && (passedAssignments == true) && (passedProject == false)){
-        return aprovado = true;
-    }    
+    } 
     else{
         return aprovado = false;
     }
