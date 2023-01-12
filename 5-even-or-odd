@@ -1,7 +1,6 @@
 public String evenOrOdd(Integer num) {
     String par = 'even';
 	String impar = 'odd';
-
     if(Math.mod(num,2)==0){
         return par;
     }else{
