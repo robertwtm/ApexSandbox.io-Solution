@@ -1,0 +1,8 @@
+public String evenOrOdd(Integer num) {
+    String inteiro;
+    if(Math.mod(num,2)==0){
+        return inteiro = 'odd';
+    }else{
+        return inteiro = 'even';
+    }
+}
