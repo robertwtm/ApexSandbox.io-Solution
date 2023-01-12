@@ -1,8 +1,10 @@
 public String evenOrOdd(Integer num) {
-    String inteiro;
+    String par = 'odd';
+	String impar = 'even';
+
     if(Math.mod(num,2)==0){
-        return inteiro = 'odd';
+        return par;
     }else{
-        return inteiro = 'even';
+        return impar;
     }
 }
