@@ -1,0 +1,9 @@
+public Boolean isPrime(Integer num) {
+    Boolean primo;
+    for ( int i = 2; i< num ; i++){
+        if( Math.mod(year,100)==0 ){
+            return primo = false;
+        }
+    }
+    return primo = true;
+}
