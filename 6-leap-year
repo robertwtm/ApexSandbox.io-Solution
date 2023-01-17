@@ -5,7 +5,7 @@ public Boolean isLeapYear(Integer year) {
     Boolean div100 = Math.mod(year, 100) == 0;
     Boolean div400 = Math.mod(year, 400) == 0;
 
-    if ( (div4 == true) || (div100 == true) && (div400 == true) ) {
+    if ( (div4 == true) && (div100 == true) && (div400 == true) ) {
         return bissexto = true;
     } else{
         return bissexto = false;
