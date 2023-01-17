@@ -1,14 +1,14 @@
 public Boolean isLeapYear(Integer year) {
     Boolean bissexto;
 
-    if( (Math.mod(year,4)==0) ) {
-        if ( (Math.mod(year,100)==0)  && (Math.mod(year,400)==0) ){
-            return bissexto = true;
-        } else {
-            return bissexto = false;
-        }
-    return bissexto = true;
+    if ( (Math.mod(year,4)==0) ) {
+        return bissexto = true;
+    } else if ( (Math.mod(year,100)==0) ){
+        return bissexto = false;
+    } else if ( (Math.mod(year,400)==0) ){
+        return bissexto = true;
     } else{
-         return bissexto = false;
+        return bissexto = false;
     }
+
 }
