@@ -1,7 +1,7 @@
 public String formatName(String firstName, String lastName) {
-    String nomeCompleto = ''; 
+    String nomeCompleto; 
     if (String.isBlank(firstName) && String.isBlank(lastName)){
-    return nomeCompleto; 
+    return nomeCompleto = ''; 
     } else if(String.isBlank(firstName)){
         return nomeCompleto = firstName;
     } else if(String.isBlank(lastName)){
