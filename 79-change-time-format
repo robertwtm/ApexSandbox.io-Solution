@@ -1,0 +1,6 @@
+public String changeTimeFormat(String strTime) {
+    
+    DateTime dt = DateTime.valueOf(strTime);
+    return dt.format('hh:mm a');
+    
+}
