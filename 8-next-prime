@@ -2,7 +2,7 @@ public Integer nextPrime(Integer num) {
     if (num < 2) return 2;
     num++;
     for (Integer i = 2; i<num; i++ ) {
-        if ( Math.mod(num,i) == 0 ) {
+        if (Math.mod(num,i) == 0 ) {
             num++;
             i = 2;
         }
