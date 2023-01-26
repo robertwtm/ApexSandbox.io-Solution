@@ -1,0 +1,8 @@
+public Id insertStudent(String name, String email) {
+    
+    apxio__Student__c aluno = new apxio__Student__c();
+    aluno.Name = name;
+    aluno.apxio__Email__c = email;
+    insert aluno;
+    return aluno.Id;
+}
