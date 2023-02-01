@@ -6,8 +6,13 @@ public String registerStudent(String name, String phone, String email) {
     estudante.apxio__Phone__c = phone;
     estudante.apxio__Email__c = email;
 
-
     insert estudante;
-    return estudante.apxio__Registration_Number__c;
+
+    apxio__Student__c estudanteRegistrado = [
+        SELECT Id, apxio__Registration_Number__c 
+        FROM apxio__Student__c
+        WHERE Id = :estudante.Id
+    ];
+    return estudanteRegistrado.apxio__Registration_Number__c;
 
 }
