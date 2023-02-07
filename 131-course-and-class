@@ -12,4 +12,5 @@ public void createCourseAndClass(String name, String description) {
     insert cursoFilho;
 }
 
-
+//Safe Navigation Operator
+//https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
