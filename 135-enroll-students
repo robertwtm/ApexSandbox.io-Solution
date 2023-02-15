@@ -1,0 +1,25 @@
+public void enrollStudents(List<String> emails, String className) {
+    
+    List<apxio__Student__c> estudantes = [
+        SELECT Id 
+        FROM apxio__Student__c 
+        WHERE apxio__Email__c IN :emails
+    ];
+
+    List<apxio__Class__c> classe = [
+        SELECT Id
+        FROM apxio__Class__c
+        WHERE Name = :className
+    ];
+
+    List<apxio__Class_Enrollment__c> matricula = new List<apxio__Class_Enrollment__c>();
+
+    for (apxio__Student__c estudante : estudantes) {
+        apxio__Class_Enrollment__c matriculado = new apxio__Class_Enrollment__c(
+            apxio__Student__c = estudante.Id,
+            apxio__Offered_Class__c = classe[0].Id
+        );
+        matricula.add(matriculado);
+    }
+    insert matricula;
+}
