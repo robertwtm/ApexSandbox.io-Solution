@@ -1,5 +1,5 @@
 public Boolean isTypeAccount(sObject record)
 {
-    Boolean resultado = record instanceof Contact;
+    Boolean resultado = record instanceof Account;
     return resultado;
 }
