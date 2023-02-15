@@ -3,3 +3,8 @@ public Boolean isTypeAccount(sObject record)
     Boolean resultado = record instanceof Account;
     return resultado;
 }
+
+//if(record != null){   
+// return record.getSObjectType() == Account.SObjectType;     
+// }   
+// return false;
