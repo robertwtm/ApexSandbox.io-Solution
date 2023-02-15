@@ -1,12 +1,12 @@
 public String divide(Integer a, Integer b){
 
-try {
-    Integer resultado = a/b;
-    String resultadoConvert= String.valueOf(c);
-    return resultadoConvert; 
+    try {
+        Integer resultado = a/b;
+        String resultadoConvert= String.valueOf(c);
+        return resultadoConvert; 
 
-} catch(Exception  e) {
-    System.debug('The following exception has occurred: ' + e.getMessage());
-}  
+    } catch(Exception  e) {
+        System.debug('The following exception has occurred: ' + e.getMessage());
+    }  
 
 }
