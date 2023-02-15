@@ -1,0 +1,11 @@
+public String divide(Integer a, Integer b){
+
+try {
+    Integer resultado = a/b;
+    String.va
+
+} catch(DmlException e) {
+    System.debug('The following exception has occurred: ' + e.getMessage());
+}  
+
+}
