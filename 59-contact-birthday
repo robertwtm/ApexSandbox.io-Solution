@@ -3,6 +3,6 @@ public Boolean isBirthday(Contact c) {
     && System.today().month() == c.Birthdate.month()){
         return true;
     }else{
-        false
+        return false
     }
 }
