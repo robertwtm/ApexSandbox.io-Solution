@@ -1,0 +1,7 @@
+public Boolean isBirthday(Contact c) {
+    if(System.today().day() == c.Birthdate.day()){
+        return true;
+    }else{
+        false
+    }
+}
