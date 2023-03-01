@@ -1,0 +1,7 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+    if(c1 != c2 ){
+        return false;
+    }else{
+        return true;
+    }
+}
