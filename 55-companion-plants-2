@@ -7,16 +7,18 @@ public Boolean companionPlants(List<String> plants) {
     return true;
 }
 
-public Boolean companheiras(String plant1, String plant2) {
-    if (plant1 == 'onions' && (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes'))
+public Boolean companheiras(String planta1, String planta2) {
+    if (planta1 == 'onions' && (planta2 == 'lettuce' || planta2 == 'carrots' || planta2 == 'tomatoes'))
         return true;
-    else if (plant1 == 'lettuce' && (plant2 == 'cucumbers' || plant2 == 'onions'))
+    else if (planta1 == 'lettuce' && (planta2 == 'cucumbers' || planta2 == 'onions'))
         return true;
-    else if (plant1 == 'cucumbers' && plant2 == 'lettuce')
+    else if (planta1 == 'cucumbers' && planta2 == 'lettuce')
         return true;
-    else if (plant1 == 'carrots' && plant2 == 'onions')
+    else if (planta1 == 'carrots' && planta2 == 'onions')
         return true;
-    else if (plant1 == 'tomatoes' && plant2 == 'onions')
+    else if (planta1 == 'tomatoes' && planta2 == 'onions')
         return true;
     else return false;
 }
+
+//todas as plantas são plantadas ao lado de um companheiro se nenhuma planta for plantada? Ou outro problema: um array contém apenas números inteiros positivos se o array for de tamanho 0? A resposta para ambas é sim, por causa de algo chamado "Verdade Vazia" na lógica. Você pode ler sobre isso aqui: https://en.wikipedia.org/wiki/Vacuous_truth ... Você pode rolar para baixo até a seção "Em programação de computadores" neste artigo. Outro exemplo de um método que você pode usar no dia a dia: https://javascript.plainenglish.io/why-you-should-know-the-vacuous-truth-about-array-every-in-javascript-f447213fcdb0
