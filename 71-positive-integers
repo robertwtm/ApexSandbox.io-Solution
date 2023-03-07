@@ -1,0 +1,7 @@
+public List<Integer> positiveIntegers(List<Integer> numbers) {
+    List<Integer> positivos = new List<Integer>();
+    for (Integer i=0; i<numbers.size(); i++) {
+        if (numbers[i] > 0) positivos.add(numbers[i]);
+    }
+    return positivos;
+}
