@@ -7,6 +7,8 @@ public static Integer findLargest(List<Integer> nums) {
         if (nums[i] > largest) {
             maiorNumero = nums[i];
         }
+        
+        i++;
     }
     return maiorNumero;
 }
