@@ -10,7 +10,10 @@ public Integer secondLargest(List<Integer> numbers) {
             segundoMaiorNumero = maiorNumero;
             maiorNumero = numbers[i];
         }
+        else{
+            return segundoMaiorNumero;
+        }
     }
 
-    return segundoMaiorNumero;
+    
 }
