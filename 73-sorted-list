@@ -24,7 +24,8 @@ public boolean isSorted(List<Integer> numbers) {
                     break;
                 }
             }
-
     }
     return listaOrdenada;
 }
+
+//https://www.codecademy.com/forum_questions/5410613b631fe9b5d000245c
