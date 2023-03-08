@@ -1,0 +1,10 @@
+public List<String> orgNames(List<String> adjectives, List<String> animals) {
+    List<String> combinacoes = new List<String>();
+
+    for (String adijetivo : adjectives) {
+        for (String animal : animals) {
+            combinacoes.add(adijetivo + '-' + animal);
+        }
+    }
+    return combinacoes;
+}
