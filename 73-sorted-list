@@ -5,7 +5,7 @@ public boolean isSorted(List<Integer> numbers) {
     
     for(Integer i=0;i<numbers.size()-1;i++){
         if(numbers[i]<=numbers[i+1]){
-            listaOrdenada=true;
+            listaOrdenada=false;
         }
         else
         {
