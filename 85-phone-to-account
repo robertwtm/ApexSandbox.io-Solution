@@ -1,6 +1,6 @@
 public Map<String, Account> phoneToAccount(List<Account> accounts) {
     Map<String, Account> telefoneConta = new Map<String, Account>();
-    for (Conta conta: contas) {
+    for (Contact conta: contas) {
         if (conta.Telefone != null) {
             telefoneConta.put(conta.Phone, conta);
         }
