@@ -1,6 +1,6 @@
 public Boolean containsDuplicates(List<Integer> nums) {
-    Set<Integer> duplicado = new Set<Integer>();
-    duplicado.add(nums);
+    Set<Integer> duplicado = new Set<Integer>(nums);
+    //duplicado.add();
 
     if(duplicado.size() == nums.size()){
         return true;
