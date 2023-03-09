@@ -1,0 +1,9 @@
+public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
+    Set<Integer> set3 = new Set<Integer>();
+    for (Integer valor : set1) {
+        if (set2.contains(valor)) {
+            set3.add(valor);
+        }
+    }
+    return set3;
+}
