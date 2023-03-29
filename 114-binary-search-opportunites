@@ -8,7 +8,7 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
         }else if(target > opportunities[meio].Amount){
             left = meio + 1;
         }else {
-            right = meio -1;
+            right = meio - 1;
         }
     }
     return -1;
