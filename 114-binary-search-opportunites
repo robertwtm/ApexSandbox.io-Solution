@@ -1,7 +1,6 @@
 public static Integer search(List<Opportunity> opportunities, Integer target){
-//solution here
-  Integer left = 0;
-    Integer right = opportunities.size() -1;
+    Integer left = 0;
+    Integer right = opportunities.size();
     while(left <=  right){
         Integer middle = (left + right) / 2;
         if(opportunities[middle].Amount == target){
