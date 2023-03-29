@@ -1,0 +1,22 @@
+public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2){
+    List<Integer> resultado = new List<Integer>();
+    Integer listaUm = 0;
+    Integer listaDois = 0;
+    Integer tamanhoListaUm = list1.size() -1;
+    Integer tamanhoListaDois = list2.size() -1;
+    //Integer current = 0;
+    while(listaUm <= tamanhoListaUm && listaDois <= tamanhoListaDois){
+        if(list1[listaUm] < list2[listaDois]){
+            resultado.add(list1[listaUm++]);
+        }else {
+            resultado.add(list2[listaDois++]);
+        }
+    }
+    while(listaUm <= tamanhoListaUm){
+        resultado.add(list1[listaUm++]);
+    }   
+    while (listaDois <= tamanhoListaDois) {        
+        resultado.add(list2[listaDois++]);
+    }
+    return resultado;    
+}
