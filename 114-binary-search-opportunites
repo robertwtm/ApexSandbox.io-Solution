@@ -2,13 +2,13 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
     Integer left = 0;
     Integer right = opportunities.size() -1;
     while(left <=  right){
-        Integer middle = (left + right) / 2;
-        if(opportunities[middle].Amount == target){
-            return middle;
-        }else if(target > opportunities[middle].Amount){
-            left = middle + 1;
+        Integer meio = (left + right) / 2;
+        if(opportunities[meio].Amount == target){
+            return meio;
+        }else if(target > opportunities[meio].Amount){
+            left = meio + 1;
         }else {
-            right = middle -1;
+            right = meio -1;
         }
     }
     return -1;
